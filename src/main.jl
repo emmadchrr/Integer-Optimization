@@ -31,12 +31,12 @@ function main()
         println("Attention : le temps est fixé à 30s pour permettre de faire des tests rapides. N'hésitez pas à l'augmenter lors du calcul des résultats finaux que vous intégrerez à votre rapport.")
         time_limit = 30
 
-        # Pour chaque profondeur considérée
+        # Pour chaque profondeur considérée d'arbre D
         for D in 2:4
 
             println("  D = ", D)
 
-            ## 1 - Univarié (séparation sur une seule variable à la fois)
+            ## 1 - Univarié (séparation sur une seule variable à la fois) - FORMULATION F AXIS ALIGNED
             # Création de l'arbre
             print("    Univarié...  \t")
             T, obj, resolution_time, gap = build_tree(X_train, Y_train, D,  classes, multivariate = false, time_limit = time_limit)
@@ -50,7 +50,7 @@ function main()
             end
             println()
 
-            ## 2 - Multivarié
+            ## 2 - Multivarié - FORMULATION F OBLIQUE SPLIT
             print("    Multivarié...\t")
             T, obj, resolution_time, gap = build_tree(X_train, Y_train, D, classes, multivariate = true, time_limit = time_limit)
             print(round(resolution_time, digits = 1), "s\t")

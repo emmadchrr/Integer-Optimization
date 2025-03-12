@@ -17,7 +17,7 @@ print(car_evaluation.metadata)
 print(car_evaluation.variables) 
 #%%
 # Specify the file path
-file_path = "/Users/emmadecharry/Desktop/ENSTA/4A/SOD/SOD22 Integer opti for ML/Projet_IOML/data/car.data"
+file_path = "../data/car.data"
 
 # Read the CSV file into a pandas DataFrame
 column_names = ['buying', 'maint', 'doors', 'persons', 'lug_boot', 'safety', 'class']

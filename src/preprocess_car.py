@@ -101,7 +101,7 @@ for class_label in top_classes:
 df = sampled_df
 # %%
 # Define the file path for the .txt file
-txt_file_path = "/Users/emmadecharry/Desktop/ENSTA/4A/SOD/SOD22 Integer opti for ML/Projet_IOML/data/car.txt"
+txt_file_path = "../data/car.txt"
 numerical_columns = ['buying', 'maint', 'doors', 'persons', 'lug_boot', 'safety']
 # Open the .txt file in write mode
 with open(txt_file_path, 'w') as file:
